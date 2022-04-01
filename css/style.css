@@ -8,6 +8,7 @@ body {
   font-family: "BIZ UDGothic", sans-serif;
   line-height: 1.25rem;
   background-color: var(--dark);
+  background-image: url(../img/bg-noise.png);
   color: var(--light);
 }
 
