@@ -1,0 +1,78 @@
+/* The about page keeps its own identity, carried over from benjaminhunkins.com. */
+
+/* palette v1 #333333 #4C1B33 #EFE672 #98A942 #2D6960 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, system-ui, sans-serif;
+  color: #cccccc;
+  background: #161616;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 9rem 1.5rem;
+}
+
+h1,
+.lead p {
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 1.3em;
+}
+
+h1 {
+  margin: 0 0 2rem;
+}
+
+.sig {
+  max-width: 124px;
+  margin-left: auto;
+}
+
+footer {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  font-size: 0.875rem;
+  color: #777777;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  h1,
+  .lead p {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 4.5rem 1.5rem;
+  }
+
+  footer {
+    padding-bottom: 1.5rem;
+  }
+}

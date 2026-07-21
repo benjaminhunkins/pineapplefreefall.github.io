@@ -71,11 +71,16 @@ h4 {
 
 .projects ul li {
   margin: 0 1rem 2.5rem 1rem;
-  padding: 5rem;
   border: 2px solid var(--highlight);
   border-radius: 0.5rem;
   font-size: larger;
   font-weight: bold;
+}
+
+/* padding lives on the anchor so the whole box stays clickable */
+.projects ul li a {
+  display: block;
+  padding: 5rem;
 }
 
 .footer {
@@ -83,4 +88,50 @@ h4 {
   text-align: center;
   text-transform: uppercase;
   font-size: smaller;
+}
+
+/* Green Label Art */
+
+details {
+  margin: 1rem 0;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+summary {
+  color: var(--highlight);
+}
+
+.gla-container {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+
+/* height:auto is required — the width/height attributes on the markup would
+   otherwise stretch the image once max-width kicks in */
+.gla-img {
+  max-width: 320px;
+  height: auto;
+  margin-left: 1rem;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .gla-container {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+
+  .gla-img {
+    margin: 1rem 0;
+    max-width: 100%;
+  }
+
+  /* the browser's default 40px side margins waste space at this width */
+  blockquote {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
